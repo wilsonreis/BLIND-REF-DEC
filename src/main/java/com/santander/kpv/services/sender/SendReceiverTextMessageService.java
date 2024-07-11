@@ -80,7 +80,6 @@ public class SendReceiverTextMessageService {
             receivedMessage = consumer.receiveBody(String.class, 15000);
             if (receivedMessage == null) {
                 log.info("Tempo de espera expirou sem receber mensagem");
-                receivedMessage = "Tempo de espera expirado";
                 throw new MyRuntimeException("Tempo de espera expirado");
             } else {
                 log.info("Mensagem recebida: {}", receivedMessage);

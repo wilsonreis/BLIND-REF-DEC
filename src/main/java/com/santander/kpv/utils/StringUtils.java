@@ -42,4 +42,7 @@ public class StringUtils {
         }
         return "";
     }
+
+    private StringUtils() {
+    }
 }
