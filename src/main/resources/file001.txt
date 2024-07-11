@@ -1,0 +1,13 @@
+2024-07-04T16:15:06.048-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04T16:15:06.049-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-04T16:15:06.049-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-04T16:15:06.088-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.c.BlindagemRefControllerSant       : BlindagemRefControllerSant : passou 
+2024-07-04T16:15:06.088-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : SendReceiverService : passou 1
+2024-07-04T16:15:06.088-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : SendReceiverService : passou 2
+2024-07-04T16:15:06.088-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : sendAndReceiveTextMessage : chegou 2.1
+2024-07-04T16:15:06.513-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : message.setJMSCorrelationID(UUID.randomUUID().toString()); [2bbe8c4c-1451-4b53-9f1d-ea8a0f9ba894]
+2024-07-04T16:15:06.564-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : sendAndReceiveTextMessage : chegou 2.2
+2024-07-04T16:15:06.565-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : sendAndReceiveTextMessage-getJMSCorrelationID : chegou 2.3 [2bbe8c4c-1451-4b53-9f1d-ea8a0f9ba894] 
+2024-07-04T16:15:06.565-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : sendAndReceiveTextMessage : chegou 2.4
+2024-07-04T16:15:06.565-03:00  INFO 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : receiveMessage(String selector) - 1 [2bbe8c4c-1451-4b53-9f1d-ea8a0f9ba894] 
+2024-07-04T16:15:06.741-03:00 ERROR 22340 --- [Blindagem-Ref] [nio-8081-exec-4] c.s.k.s.sender.SendReceiverService       : send(String messageRequest) JMSWMQ2008: Failed to open MQ queue 'DEV.QUEUE.2'.; nested exception is com.ibm.mq.MQException: JMSCMQ0001: IBM MQ call failed with compcode '2' ('MQCC_FAILED') reason '2459' ('MQRC_SELECTOR_SYNTAX_ERROR'). 
